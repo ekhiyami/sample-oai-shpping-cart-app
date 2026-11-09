@@ -1,0 +1,507 @@
+{
+  "reference": "Original supplied Azure application source snapshot",
+  "comparisonDate": "2026-11-09",
+  "deployedArtifactParityVerified": false,
+  "deployedRevision": null,
+  "deploymentEvidence": "Deployment Center reported CI/CD is not configured; no deployed artifact/revision match established.",
+  "sourceFiles": 81,
+  "unchangedFiles": 71,
+  "files": [
+    {
+      "path": "src/ai-shopping-cart-service/.gitignore",
+      "packageSha256": "63fb5abf27a9a9eb6bdb2cc25f36408c7749780eab3e72c249ae8e187460c040",
+      "suppliedSnapshotSha256": "d770a2f1ae86822249625388a87244745c6f545b3de25586fd585d88435659d3",
+      "matchesSuppliedSnapshot": false,
+      "adaptation": "Ignore local generated artifacts and environment files."
+    },
+    {
+      "path": "src/ai-shopping-cart-service/.mvn/wrapper/maven-wrapper.jar",
+      "packageSha256": "e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a",
+      "suppliedSnapshotSha256": "e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/.mvn/wrapper/maven-wrapper.properties",
+      "packageSha256": "f3466ceaaae04968e2871252bdfb83c319139422b6e1eec34338c3602319a64e",
+      "suppliedSnapshotSha256": "f3466ceaaae04968e2871252bdfb83c319139422b6e1eec34338c3602319a64e",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/README.md",
+      "packageSha256": "94e30cc98f8c1d3d6149748a0cc8ac5b0d148f3074dc798b9cdd2ae2a22a661f",
+      "suppliedSnapshotSha256": "5cc8c6c915fafe2087d39455e634666fc1489a33c22fd214e02677fcefa5c95b",
+      "matchesSuppliedSnapshot": false,
+      "adaptation": "Assessment and build documentation."
+    },
+    {
+      "path": "src/ai-shopping-cart-service/client.http",
+      "packageSha256": "ed836a4cee2c9e7e8eeb218666ff8f7395f5aa5e6956320b0844d6c2c1d59bbe",
+      "suppliedSnapshotSha256": "ed836a4cee2c9e7e8eeb218666ff8f7395f5aa5e6956320b0844d6c2c1d59bbe",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/mvnw",
+      "packageSha256": "94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7",
+      "suppliedSnapshotSha256": "94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/mvnw.cmd",
+      "packageSha256": "f7bb776ef9575b58c668a070aebb198860fd23c9bed2a133dfaae5e67151a3ed",
+      "suppliedSnapshotSha256": "f7bb776ef9575b58c668a070aebb198860fd23c9bed2a133dfaae5e67151a3ed",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/pom.xml",
+      "packageSha256": "12fcdbfe7e3cb60dedcaf6d3d7503c81db79997d301baff5086405932e38a27f",
+      "suppliedSnapshotSha256": "12fcdbfe7e3cb60dedcaf6d3d7503c81db79997d301baff5086405932e38a27f",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/AiActivityController.java",
+      "packageSha256": "943fe9b06ef6560131116f558a3b3897a0a07c40bff397b752598a9d6aa5db98",
+      "suppliedSnapshotSha256": "91d56eb0974b020caacecd9e6c23529056cb40004566d0da144ec364b92f9f0b",
+      "matchesSuppliedSnapshot": false,
+      "adaptation": "Azure-only metadata and truthful optional mock labels; no change to AI/RAG clients."
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/AiActivityTracker.java",
+      "packageSha256": "fa7e7f376e74f32568f78f2342b8cd8f9ac915092776ac269a681fa3fb6fb372",
+      "suppliedSnapshotSha256": "fa7e7f376e74f32568f78f2342b8cd8f9ac915092776ac269a681fa3fb6fb372",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/AiShoppingCartServiceApplication.java",
+      "packageSha256": "a98cc68001d2506d9d6b7ac56583f0fe0102eef66542118e92ffb31516e0e959",
+      "suppliedSnapshotSha256": "a98cc68001d2506d9d6b7ac56583f0fe0102eef66542118e92ffb31516e0e959",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/AiShoppingCartServiceConfiguration.java",
+      "packageSha256": "91bdfb673af85df74666b62ee75ba1736654eb273c2da0729293fc3ae48ffaa5",
+      "suppliedSnapshotSha256": "91bdfb673af85df74666b62ee75ba1736654eb273c2da0729293fc3ae48ffaa5",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/HealthController.java",
+      "packageSha256": "477315d73050378aed99d966aee59b4e0a937f100068629543b314eb34da9b48",
+      "suppliedSnapshotSha256": "477315d73050378aed99d966aee59b4e0a937f100068629543b314eb34da9b48",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/cartitem/CartItem.java",
+      "packageSha256": "9d4e908df400cd3bedc9395012fff906e50b2fe74ba34f3b52704a28cc695aae",
+      "suppliedSnapshotSha256": "9d4e908df400cd3bedc9395012fff906e50b2fe74ba34f3b52704a28cc695aae",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/cartitem/CartItemController.java",
+      "packageSha256": "f1c94fe754951e52280585fd000c00f61efa5a58e4467663da08366fa40620f6",
+      "suppliedSnapshotSha256": "f1c94fe754951e52280585fd000c00f61efa5a58e4467663da08366fa40620f6",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/cartitem/CartItemRepository.java",
+      "packageSha256": "6899aa05a54e8404a8d3b016137c50a9b4c01010cd454a187a2dfd8ab5436eec",
+      "suppliedSnapshotSha256": "6899aa05a54e8404a8d3b016137c50a9b4c01010cd454a187a2dfd8ab5436eec",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/cartitem/exception/CartItemNotFoundException.java",
+      "packageSha256": "843a6b6eef0c8efd94220f1d5e14efe20840754424c24d7d364a3f76ffcb895f",
+      "suppliedSnapshotSha256": "843a6b6eef0c8efd94220f1d5e14efe20840754424c24d7d364a3f76ffcb895f",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/cartitem/exception/EmptyCartException.java",
+      "packageSha256": "d45890826814fa7b869435e0ebf71d5594092d814fbb216e28c04d3b8f9fb6b3",
+      "suppliedSnapshotSha256": "d45890826814fa7b869435e0ebf71d5594092d814fbb216e28c04d3b8f9fb6b3",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/cartitem/exception/RestResponseEntityExceptionHandler.java",
+      "packageSha256": "b4070497e9f809cf4ed6b0ca5b1b21de3498794f88ebc3f7d0405b2272f32780",
+      "suppliedSnapshotSha256": "b4070497e9f809cf4ed6b0ca5b1b21de3498794f88ebc3f7d0405b2272f32780",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/chat/ChatController.java",
+      "packageSha256": "622f36b128a6dffa5bd20de89575999ba52aea811d54a8bbdb0348d03d3ffb78",
+      "suppliedSnapshotSha256": "622f36b128a6dffa5bd20de89575999ba52aea811d54a8bbdb0348d03d3ffb78",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/chat/GroundedChatService.java",
+      "packageSha256": "f90887182a4117618698d76f3fe588bd4ca55c3f5f009812833c5955e97d597f",
+      "suppliedSnapshotSha256": "f90887182a4117618698d76f3fe588bd4ca55c3f5f009812833c5955e97d597f",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/chat/RagSearchService.java",
+      "packageSha256": "dfe47cd9be36a9cc93041317cbc11c2551874bf5d116d42e5bfd567550b0102a",
+      "suppliedSnapshotSha256": "dfe47cd9be36a9cc93041317cbc11c2551874bf5d116d42e5bfd567550b0102a",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/nutrition/NutritionFact.java",
+      "packageSha256": "6e19ed847de010ebe9f3d69d226e809581e20df254a46dfeabe50d5a52a1f056",
+      "suppliedSnapshotSha256": "6e19ed847de010ebe9f3d69d226e809581e20df254a46dfeabe50d5a52a1f056",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/nutrition/NutritionFactRepository.java",
+      "packageSha256": "48c6688b504f87ce8acfd466e408d0f3c2cc0b20732fa7f2c26536683b7c7a1a",
+      "suppliedSnapshotSha256": "48c6688b504f87ce8acfd466e408d0f3c2cc0b20732fa7f2c26536683b7c7a1a",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/nutrition/NutritionSeed.java",
+      "packageSha256": "71103ad426fd8281f379a094c91660f1442f17965139e8ac6312b95dbfc627f8",
+      "suppliedSnapshotSha256": "71103ad426fd8281f379a094c91660f1442f17965139e8ac6312b95dbfc627f8",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/nutrition/NutritionService.java",
+      "packageSha256": "9ade2bec9d886047c86f31409254b50c9f4d3ea2b407960e45f7a27440caedf5",
+      "suppliedSnapshotSha256": "9ade2bec9d886047c86f31409254b50c9f4d3ea2b407960e45f7a27440caedf5",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/openai/AzureOpenAiShoppingCartAiRecommendations.java",
+      "packageSha256": "4478d6ba3fc6af5efe0789b6ef8164670dc6b2453bf4c59e11e43c03cbcd4f5c",
+      "suppliedSnapshotSha256": "4478d6ba3fc6af5efe0789b6ef8164670dc6b2453bf4c59e11e43c03cbcd4f5c",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/openai/MockShoppingCartAiRecommendations.java",
+      "packageSha256": "ca29ac7b303a4f519c6e21b66f8cfa1e31cce61f7dc038e80dcde56e120b056e",
+      "suppliedSnapshotSha256": "ca29ac7b303a4f519c6e21b66f8cfa1e31cce61f7dc038e80dcde56e120b056e",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/openai/ShoppingCartAiRecommendations.java",
+      "packageSha256": "846a814ef5ed452d35c9226e8dce775df7d06239ffb5572792d5fadd0433b9a9",
+      "suppliedSnapshotSha256": "846a814ef5ed452d35c9226e8dce775df7d06239ffb5572792d5fadd0433b9a9",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/openai/SystemMessageConstants.java",
+      "packageSha256": "0960a27cedc9d8aa0d838e151e3b0a39fcd4e53f610e157969b7b7400970ab03",
+      "suppliedSnapshotSha256": "0960a27cedc9d8aa0d838e151e3b0a39fcd4e53f610e157969b7b7400970ab03",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/java/com/microsoft/azure/samples/aishoppingcartservice/openai/UserMessageConstants.java",
+      "packageSha256": "390817d97defe0a455b0b60c319d65550b22aca4e600a513f4e6d229de115628",
+      "suppliedSnapshotSha256": "390817d97defe0a455b0b60c319d65550b22aca4e600a513f4e6d229de115628",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/resources/META-INF/additional-spring-configuration-metadata.json",
+      "packageSha256": "c0eb52c3a7cb5b6c3697f2e32736cb2357a4fc540590cd95630be57d88d66c40",
+      "suppliedSnapshotSha256": "63092b555719b0411660e84594a64fce981dfca99b8ea5a430f99e88d102339b",
+      "matchesSuppliedSnapshot": false,
+      "adaptation": "Describe actual configuration fields; editor metadata only."
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/resources/application-azure.properties",
+      "packageSha256": "d2293d8a0d89168728e0ec9338e9439bef050c3e1d55fb47803024df00c46685",
+      "suppliedSnapshotSha256": "d2293d8a0d89168728e0ec9338e9439bef050c3e1d55fb47803024df00c46685",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/resources/application-local.properties",
+      "packageSha256": "7b1d1bc518b0af73bc9d876b50dd8007e24a5ba63e2d45284830424a0c27e5ac",
+      "suppliedSnapshotSha256": "7b1d1bc518b0af73bc9d876b50dd8007e24a5ba63e2d45284830424a0c27e5ac",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/resources/application.properties",
+      "packageSha256": "ebfff273ee2e2e592a08c08efff54451da63bd476ca8240be6380e85867e7f99",
+      "suppliedSnapshotSha256": "32a048cf5f0c22c8dc4ba4405f1b27d19438efca0e401440165d9d0795c01eb9",
+      "matchesSuppliedSnapshot": false,
+      "adaptation": "Remove unused provider-display selector; Azure remains the only provider."
+    },
+    {
+      "path": "src/ai-shopping-cart-service/src/main/resources/nutrition-facts.csv",
+      "packageSha256": "0a7a8be7013c64ceeb8e9aada406c52be8147eb36af8c09239b34f4340e1a9e3",
+      "suppliedSnapshotSha256": "0a7a8be7013c64ceeb8e9aada406c52be8147eb36af8c09239b34f4340e1a9e3",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/.gitignore",
+      "packageSha256": "3dd9582d5f5facde8d02347c00b84e422ee08d40074111d1d02227468e6ab50e",
+      "suppliedSnapshotSha256": "3dd9582d5f5facde8d02347c00b84e422ee08d40074111d1d02227468e6ab50e",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/Dockerfile",
+      "packageSha256": "d39c9fcc6a4119c669c55fb95d32df833657060c07ad4952d9e996a5b94f6de2",
+      "suppliedSnapshotSha256": "d39c9fcc6a4119c669c55fb95d32df833657060c07ad4952d9e996a5b94f6de2",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/README.MD",
+      "packageSha256": "1e7cd433790d09f34cf320481f676497059ed6cf7ab825e815ffda5728648e02",
+      "suppliedSnapshotSha256": "20c22ff979c10619b5984bad99e6f554f4c93b779dc48d588f0b7842a2f3d7ec",
+      "matchesSuppliedSnapshot": false,
+      "adaptation": "Assessment and build documentation."
+    },
+    {
+      "path": "src/frontend/entrypoint.js",
+      "packageSha256": "0d00267d78e0a5ed338e4a067212921fbd8a565c332ba2c7d1f8b58be2904d04",
+      "suppliedSnapshotSha256": "f3b105a1bd35cb261d0b493b8f63ef5915c751927ec8c3929f87b64b3cbc81bb",
+      "matchesSuppliedSnapshot": false,
+      "adaptation": "Build support: allowlist the public backend URL and serialize it safely."
+    },
+    {
+      "path": "src/frontend/entrypoint.sh",
+      "packageSha256": "7333a46ab0a6c7c465466beebf9f7d61c71e4aaa66139fa0d093648f91ff8deb",
+      "suppliedSnapshotSha256": "7333a46ab0a6c7c465466beebf9f7d61c71e4aaa66139fa0d093648f91ff8deb",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/index.html",
+      "packageSha256": "ba5d39cff51b784d82c2025ab2b5bf8af1b1a2debc79c08b1d9cf04c858ccbf9",
+      "suppliedSnapshotSha256": "ba5d39cff51b784d82c2025ab2b5bf8af1b1a2debc79c08b1d9cf04c858ccbf9",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/package-lock.json",
+      "packageSha256": "6140242a165a30fc670c86c177298253076f8f2e0f2b2712b6c6f4ec2092d21c",
+      "suppliedSnapshotSha256": "6140242a165a30fc670c86c177298253076f8f2e0f2b2712b6c6f4ec2092d21c",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/package.json",
+      "packageSha256": "eeddbbf464a31828bee6b592559a2d80d2711d7f08309e65d4ad1fceb698f2e5",
+      "suppliedSnapshotSha256": "eeddbbf464a31828bee6b592559a2d80d2711d7f08309e65d4ad1fceb698f2e5",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/public/env-config.js",
+      "packageSha256": "dfbbcb7c0c5e0a67800a7dcec548306430e873d954b11a83520731506b737dcc",
+      "suppliedSnapshotSha256": "7565fa12a6fe91a05f39a2c0a1d3c70980dfbe8d1646008914f29b1ccadf6236",
+      "matchesSuppliedSnapshot": false,
+      "adaptation": "Generated public backend address configuration; combined build uses same origin."
+    },
+    {
+      "path": "src/frontend/public/favicon.ico",
+      "packageSha256": "0c9f951fb32443fe561900ed496db9d667596f9ed387340dc601cbc6d48788a3",
+      "suppliedSnapshotSha256": "0c9f951fb32443fe561900ed496db9d667596f9ed387340dc601cbc6d48788a3",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/public/logo192.png",
+      "packageSha256": "ee2198fdffec9a477351904829fd8c9ee9b0ca4b083a75073d20a491eeed5786",
+      "suppliedSnapshotSha256": "ee2198fdffec9a477351904829fd8c9ee9b0ca4b083a75073d20a491eeed5786",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/public/logo512.png",
+      "packageSha256": "5c9f177da7b482c98b7e1b93bbc995e018afe0c34a2c514148f1e4221f8be97d",
+      "suppliedSnapshotSha256": "5c9f177da7b482c98b7e1b93bbc995e018afe0c34a2c514148f1e4221f8be97d",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/public/manifest.json",
+      "packageSha256": "0b42178eb30b152fff0870c681715c5ca79a7f51b9ae1646117809b708ba9687",
+      "suppliedSnapshotSha256": "0b42178eb30b152fff0870c681715c5ca79a7f51b9ae1646117809b708ba9687",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/public/robots.txt",
+      "packageSha256": "90d24bc3bf698ac1e173739502298ccca72adf1f564fab05f484b8c48d1cadd2",
+      "suppliedSnapshotSha256": "90d24bc3bf698ac1e173739502298ccca72adf1f564fab05f484b8c48d1cadd2",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/@types/window.d.ts",
+      "packageSha256": "0a2eaf3aa88b324cea39506518ae0eb29dace9c91895a4895f6a584977e51f2f",
+      "suppliedSnapshotSha256": "0a2eaf3aa88b324cea39506518ae0eb29dace9c91895a4895f6a584977e51f2f",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/App.tsx",
+      "packageSha256": "f9f1e2ffd9bff6346d61e586a700003f766ad4ff289af397917ca861bad83edc",
+      "suppliedSnapshotSha256": "f9f1e2ffd9bff6346d61e586a700003f766ad4ff289af397917ca861bad83edc",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/AddItemForm.tsx",
+      "packageSha256": "2743b2e9845843cd535775186e8396244a6bc8ac420943734fde3f554029c9ae",
+      "suppliedSnapshotSha256": "2743b2e9845843cd535775186e8396244a6bc8ac420943734fde3f554029c9ae",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/AiActivityPanel.css",
+      "packageSha256": "de5ed05d878bc47a61a599c564b786137440ad25d42f231412ff13d28a3d315a",
+      "suppliedSnapshotSha256": "b94adae97dbbe70d5d03b664eef701ae5519d445e9f597f079e820cddc9dbf91",
+      "matchesSuppliedSnapshot": false,
+      "adaptation": "Remove unused target-provider styling."
+    },
+    {
+      "path": "src/frontend/src/components/AiActivityPanel.tsx",
+      "packageSha256": "b920ac1f283b080ea77f967bbe3e6bb598fcc8bdf3a2ee08d83a00fb38807391",
+      "suppliedSnapshotSha256": "2b8d98adf485d1fdd6dea05cac0b35b93d962c46c69c071e199d46fef62bd020",
+      "matchesSuppliedSnapshot": false,
+      "adaptation": "Azure-only display; distinguish optional local recommendation mocks."
+    },
+    {
+      "path": "src/frontend/src/components/AiNutritionAnalysis.tsx",
+      "packageSha256": "9b1721020320428b905323c65b3d776d3bb617c2d42967a0ce6d7f31e2908d83",
+      "suppliedSnapshotSha256": "9b1721020320428b905323c65b3d776d3bb617c2d42967a0ce6d7f31e2908d83",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/Error.tsx",
+      "packageSha256": "dd4b27fede158173688b169885a74ccbd4787aa050e8b11abf9132d2f3074829",
+      "suppliedSnapshotSha256": "dd4b27fede158173688b169885a74ccbd4787aa050e8b11abf9132d2f3074829",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/Header.tsx",
+      "packageSha256": "362947c74a645126d08d1efbbd3055cccf05823ce9cc43ff6c69d7155aec9de6",
+      "suppliedSnapshotSha256": "362947c74a645126d08d1efbbd3055cccf05823ce9cc43ff6c69d7155aec9de6",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/Item.tsx",
+      "packageSha256": "820379a62ffece32a4d40025613eb7ff84623848b2990cd5afee56cf612c27ab",
+      "suppliedSnapshotSha256": "820379a62ffece32a4d40025613eb7ff84623848b2990cd5afee56cf612c27ab",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/ItemList.tsx",
+      "packageSha256": "e8beed40981f969c96cb1953de157834353469b08996d24d699c9cf9664fa73e",
+      "suppliedSnapshotSha256": "e8beed40981f969c96cb1953de157834353469b08996d24d699c9cf9664fa73e",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/Loader.tsx",
+      "packageSha256": "125407b611df28deaffd41513ea4c0f3ce566f003d6257b5e589a8eface0d7dd",
+      "suppliedSnapshotSha256": "125407b611df28deaffd41513ea4c0f3ce566f003d6257b5e589a8eface0d7dd",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/NutriscoreBar.tsx",
+      "packageSha256": "6e164a2b8da3cde0932e932349b2f274b3cd827eb99f91196bdd4ed99ba2c75c",
+      "suppliedSnapshotSha256": "6e164a2b8da3cde0932e932349b2f274b3cd827eb99f91196bdd4ed99ba2c75c",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/NutriscoreBarItem.tsx",
+      "packageSha256": "491b4a0de2b5255aecab28cbb578018762daa56b0ccf9515d4087b69bd44d275",
+      "suppliedSnapshotSha256": "491b4a0de2b5255aecab28cbb578018762daa56b0ccf9515d4087b69bd44d275",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/NutritionChat.css",
+      "packageSha256": "de1c9a66349701c4c438a4c1dfcef3a744ef13da6e417754314031413025c91c",
+      "suppliedSnapshotSha256": "de1c9a66349701c4c438a4c1dfcef3a744ef13da6e417754314031413025c91c",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/NutritionChat.tsx",
+      "packageSha256": "8438010228c1a099b46ad2a5124ce4603066078df7f2a78b2e647f55525ed465",
+      "suppliedSnapshotSha256": "8438010228c1a099b46ad2a5124ce4603066078df7f2a78b2e647f55525ed465",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/NutritionFacts.tsx",
+      "packageSha256": "18fc8920eb6fe880ceb1d28eb7cc59427443764d33f086d9716448f1e24f3c53",
+      "suppliedSnapshotSha256": "18fc8920eb6fe880ceb1d28eb7cc59427443764d33f086d9716448f1e24f3c53",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/RagTrace.css",
+      "packageSha256": "6fc2cb4aacd6046f4cbbd88f73b7fb897dde5aa639b9aa8993f04e6a601fe05a",
+      "suppliedSnapshotSha256": "6fc2cb4aacd6046f4cbbd88f73b7fb897dde5aa639b9aa8993f04e6a601fe05a",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/RagTrace.tsx",
+      "packageSha256": "6f484693be7e40001047c72dc47a281401f635363e46de68c13f98b6bd107e52",
+      "suppliedSnapshotSha256": "6f484693be7e40001047c72dc47a281401f635363e46de68c13f98b6bd107e52",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/ShoppingCart.tsx",
+      "packageSha256": "41c3e59ea70898b322b0b5c8a69b7bd943f0b7827ffd78d1ac73c3efded74994",
+      "suppliedSnapshotSha256": "41c3e59ea70898b322b0b5c8a69b7bd943f0b7827ffd78d1ac73c3efded74994",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/Top3Recipes.tsx",
+      "packageSha256": "b1d92cda4a9b3c7a65da8fd2608c35ad5ebdeba03fec57976b942a30ec26ed29",
+      "suppliedSnapshotSha256": "b1d92cda4a9b3c7a65da8fd2608c35ad5ebdeba03fec57976b942a30ec26ed29",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/components/index.ts",
+      "packageSha256": "7da3c1af834b4518a63fef9c37f1a870b4cc35af41fb3f481233deaa8bf2667f",
+      "suppliedSnapshotSha256": "7da3c1af834b4518a63fef9c37f1a870b4cc35af41fb3f481233deaa8bf2667f",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/config/index.ts",
+      "packageSha256": "a550520cff95a4907f560dfa2bef248dd3d4cf3eeff4cdfba5b61d30e2ada467",
+      "suppliedSnapshotSha256": "a550520cff95a4907f560dfa2bef248dd3d4cf3eeff4cdfba5b61d30e2ada467",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/index.tsx",
+      "packageSha256": "cdf79ee2bbc549e53809f4082765519f0b93b4aa3e0587d909a4c189f49d2494",
+      "suppliedSnapshotSha256": "cdf79ee2bbc549e53809f4082765519f0b93b4aa3e0587d909a4c189f49d2494",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/models/CartItem.ts",
+      "packageSha256": "e8dd62061fbcdb6f8981ecdeec8f4edea43f58d6b7f8456c5cb9463236109dd1",
+      "suppliedSnapshotSha256": "e8dd62061fbcdb6f8981ecdeec8f4edea43f58d6b7f8456c5cb9463236109dd1",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/models/Status.ts",
+      "packageSha256": "10b8bf6759e562fb2f4bccf56c25ada35575391c8e56fc6381c00ac6a3569b55",
+      "suppliedSnapshotSha256": "10b8bf6759e562fb2f4bccf56c25ada35575391c8e56fc6381c00ac6a3569b55",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/models/index.ts",
+      "packageSha256": "17159eae8cec17e9542d896de77bfcc7b29f078fe56fc8d057aa6ab820e85f1f",
+      "suppliedSnapshotSha256": "17159eae8cec17e9542d896de77bfcc7b29f078fe56fc8d057aa6ab820e85f1f",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/utils/aiActivity.ts",
+      "packageSha256": "d7c997f6c9d1e4b8dc55a8cacb329429011beaeff1514fe16845919ba58f6f94",
+      "suppliedSnapshotSha256": "d7c997f6c9d1e4b8dc55a8cacb329429011beaeff1514fe16845919ba58f6f94",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/utils/idUtils.ts",
+      "packageSha256": "fc0dc6af250f11d57f99b63bb7b323a923dd54656089ca3ff57c3e4e7e820570",
+      "suppliedSnapshotSha256": "fc0dc6af250f11d57f99b63bb7b323a923dd54656089ca3ff57c3e4e7e820570",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/src/utils/stringUtils.ts",
+      "packageSha256": "3b082101d7a5b7a0214f28255d965cbe927905f90c6e980b2aa4129768f8b9da",
+      "suppliedSnapshotSha256": "3b082101d7a5b7a0214f28255d965cbe927905f90c6e980b2aa4129768f8b9da",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/tsconfig.json",
+      "packageSha256": "08aec0fef25c8281215b44913cb09e9667b20976acd07abf9998f1d5b0720e5d",
+      "suppliedSnapshotSha256": "08aec0fef25c8281215b44913cb09e9667b20976acd07abf9998f1d5b0720e5d",
+      "matchesSuppliedSnapshot": true
+    },
+    {
+      "path": "src/frontend/vite.config.ts",
+      "packageSha256": "0a38e4e0f9bf4f5c7b1e878ac1e5523d60bda247f4b9dd5767a7f6540a255c37",
+      "suppliedSnapshotSha256": "0a38e4e0f9bf4f5c7b1e878ac1e5523d60bda247f4b9dd5767a7f6540a255c37",
+      "matchesSuppliedSnapshot": true
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "purpose": "Azure source-environment context for local migration assessment; not deployment instructions",
+  "observedDate": "2026-11-09",
+  "applicationSource": "src/",
+  "referenceProfile": "azure",
+  "observedHostedFlags": {
+    "SPRING_PROFILES_ACTIVE": "azure",
+    "SHOPPING_CART_AI_MOCK": false,
+    "CHAT_ENABLED": true,
+    "CHAT_AI_ENABLED": true,
+    "RAG_ENABLED": true,
+    "NUTRITION_LOOKUP_ENABLED": true
+  },
+  "components": [
+    "React frontend embedded in Spring Boot JAR",
+    "Linux Azure App Service with Java 17",
+    "App Service Easy Auth / single-tenant Microsoft Entra web registration",
+    "PostgreSQL integration",
+    "Azure OpenAI v1 Chat Completions",
+    "Azure AI Search keyword and filtered hybrid retrieval",
+    "External Search vectorizer and corpus/ingestion",
+    "Application session/CSRF and single chat-owner check"
+  ],
+  "assessmentExclusions": [
+    "Local H2/mock preview as a representation of deployed infrastructure",
+    "HTTP test fixtures as deployed services",
+    "Learner hosted-access integration",
+    "New local RAG simulation"
+  ],
+  "evidence": [
+    "docs/azure-observed-state.md",
+    "docs/source-fidelity.md",
+    "azure/source-provenance.json",
+    "azure/appsettings.example.json",
+    "azure/authsettingsV2.example.json",
+    "azure/search-observed-state.json"
+  ],
+  "unverified": [
+    "Exact deployed source revision and artifact parity",
+    "Actual returned model version/compatibility",
+    "Complete Search index/vectorizer/corpus/ingestion assets",
+    "Database contents/version/backups and operational requirements"
+  ],
+  "cloudChangesMade": false,
+  "observedSearch": {
+    "tier": "Free",
+    "region": "Central US",
+    "replicas": 1,
+    "partitions": 1,
+    "activeIndex": "YOUR-ACTIVE-SEARCH-INDEX",
+    "activeIndexRecordCount": 10,
+    "vectorDimensions": 1536,
+    "algorithm": "hnsw",
+    "metric": "cosine",
+    "corpusVersion": "1.1"
+  },
+  "observedRecommendationParameters": {
+    "max_completion_tokens": 3072,
+    "reasoning_effort": "minimal"
+  }
+}

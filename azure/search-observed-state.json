@@ -1,0 +1,211 @@
+{
+  "evidenceKind": "Read-only portal observations; partial metadata, not a deployable index export",
+  "observedDate": "2026-11-09",
+  "service": {
+    "name": "YOUR-SEARCH-RESOURCE",
+    "region": "Central US",
+    "tier": "Free",
+    "replicas": 1,
+    "partitions": 1,
+    "searchUnits": 1
+  },
+  "inventory": {
+    "indexCount": 2,
+    "indexedRecordsPerIndex": [
+      10,
+      10
+    ]
+  },
+  "activeIndex": {
+    "name": "YOUR-ACTIVE-SEARCH-INDEX",
+    "selectedBy": "RAG_SEARCH_INDEX setting inspected on App Service",
+    "indexedRecords": 10,
+    "applicationCorpusFilterVersion": "1.1",
+    "fields": [
+      {
+        "name": "chunk_id",
+        "portalType": "String",
+        "observedEnabledProperties": [
+          "retrievable",
+          "searchable",
+          "filterable",
+          "facetable",
+          "sortable"
+        ],
+        "portalAnalyzer": "Keyword"
+      },
+      {
+        "name": "parent_id",
+        "portalType": "String",
+        "observedEnabledProperties": [
+          "retrievable",
+          "searchable",
+          "filterable",
+          "facetable",
+          "sortable"
+        ],
+        "portalAnalyzer": "Standard - Lucene"
+      },
+      {
+        "name": "content",
+        "portalType": "String",
+        "observedEnabledProperties": [
+          "retrievable",
+          "searchable",
+          "filterable",
+          "facetable",
+          "sortable"
+        ],
+        "portalAnalyzer": "Standard - Lucene"
+      },
+      {
+        "name": "title",
+        "portalType": "String",
+        "observedEnabledProperties": [
+          "retrievable",
+          "searchable",
+          "filterable",
+          "facetable",
+          "sortable"
+        ],
+        "portalAnalyzer": "Standard - Lucene"
+      },
+      {
+        "name": "product_ids",
+        "portalType": "StringCollection",
+        "observedEnabledProperties": [
+          "retrievable",
+          "searchable",
+          "filterable",
+          "facetable"
+        ],
+        "portalAnalyzer": "Standard - Lucene"
+      },
+      {
+        "name": "content_vector",
+        "portalType": "SingleCollection",
+        "observedEnabledProperties": [
+          "retrievable",
+          "searchable"
+        ],
+        "dimensions": 1536
+      },
+      {
+        "name": "document_id",
+        "portalType": "String",
+        "observedEnabledProperties": [
+          "retrievable",
+          "searchable",
+          "filterable",
+          "facetable",
+          "sortable"
+        ],
+        "portalAnalyzer": "Standard - Lucene"
+      },
+      {
+        "name": "version",
+        "portalType": "String",
+        "observedEnabledProperties": [
+          "retrievable",
+          "searchable",
+          "filterable",
+          "facetable",
+          "sortable"
+        ],
+        "portalAnalyzer": "Standard - Lucene"
+      },
+      {
+        "name": "updated_date",
+        "portalType": "String",
+        "observedEnabledProperties": [
+          "retrievable",
+          "searchable",
+          "filterable",
+          "facetable",
+          "sortable"
+        ],
+        "portalAnalyzer": "Standard - Lucene"
+      },
+      {
+        "name": "status",
+        "portalType": "String",
+        "observedEnabledProperties": [
+          "retrievable",
+          "searchable",
+          "filterable",
+          "facetable",
+          "sortable"
+        ],
+        "portalAnalyzer": "Standard - Lucene"
+      },
+      {
+        "name": "dataset",
+        "portalType": "String",
+        "observedEnabledProperties": [
+          "retrievable",
+          "searchable",
+          "filterable",
+          "facetable",
+          "sortable"
+        ],
+        "portalAnalyzer": "Standard - Lucene"
+      },
+      {
+        "name": "access_scope",
+        "portalType": "String",
+        "observedEnabledProperties": [
+          "retrievable",
+          "searchable",
+          "filterable",
+          "facetable",
+          "sortable"
+        ],
+        "portalAnalyzer": "Standard - Lucene"
+      },
+      {
+        "name": "source_file",
+        "portalType": "String",
+        "observedEnabledProperties": [
+          "retrievable",
+          "searchable",
+          "filterable",
+          "facetable",
+          "sortable"
+        ],
+        "portalAnalyzer": "Standard - Lucene"
+      },
+      {
+        "name": "corpus_version",
+        "portalType": "String",
+        "observedEnabledProperties": [
+          "retrievable",
+          "searchable",
+          "filterable",
+          "facetable",
+          "sortable"
+        ],
+        "portalAnalyzer": "Standard - Lucene"
+      }
+    ],
+    "vectorProfile": {
+      "name": "YOUR-VECTOR-PROFILE",
+      "algorithm": {
+        "name": "YOUR-HNSW-ALGORITHM",
+        "kind": "hnsw",
+        "metric": "cosine",
+        "m": 4,
+        "efConstruction": 400,
+        "efSearch": 500
+      },
+      "vectorizerName": "YOUR-QUERY-VECTORIZER",
+      "vectorizerPresent": true
+    }
+  },
+  "notInspected": [
+    "Vectorizer credentials and full provider/embedding deployment parameters",
+    "Complete index JSON, semantic configuration and all omitted field attributes",
+    "Corpus document contents and indexing/ingestion process",
+    "Indexers, data sources and skillset definitions"
+  ],
+  "queriesOrMutationsPerformed": false
+}

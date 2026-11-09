@@ -1,0 +1,61 @@
+{
+  "properties": {
+    "platform": {
+      "enabled": true,
+      "runtimeVersion": "~1"
+    },
+    "globalValidation": {
+      "requireAuthentication": true,
+      "unauthenticatedClientAction": "RedirectToLoginPage",
+      "redirectToProvider": "azureactivedirectory",
+      "excludedPaths": [
+        "/health"
+      ]
+    },
+    "identityProviders": {
+      "azureActiveDirectory": {
+        "enabled": true,
+        "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/YOUR-TENANT-ID/v2.0",
+          "clientId": "YOUR-WEB-CLIENT-ID",
+          "clientSecretSettingName": "MICROSOFT_PROVIDER_AUTHENTICATION_SECRET"
+        },
+        "login": {
+          "loginParameters": [
+            "scope=openid profile email"
+          ]
+        },
+        "validation": {
+          "allowedAudiences": [
+            "YOUR-WEB-CLIENT-ID",
+            "api://YOUR-WEB-CLIENT-ID"
+          ],
+          "defaultAuthorizationPolicy": {
+            "allowedPrincipals": {
+              "identities": [
+                "YOUR-ALLOWED-PRINCIPAL-OBJECT-ID-1",
+                "YOUR-ALLOWED-PRINCIPAL-OBJECT-ID-2"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "login": {
+      "tokenStore": {
+        "enabled": true,
+        "tokenRefreshExtensionHours": 72
+      },
+      "cookieExpiration": {
+        "convention": "FixedTime",
+        "timeToExpiration": "08:00:00"
+      }
+    },
+    "httpSettings": {
+      "requireHttps": true,
+      "routes": {
+        "apiPrefix": "/.auth"
+      }
+    }
+  }
+}
