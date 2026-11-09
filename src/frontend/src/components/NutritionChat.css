@@ -1,0 +1,23 @@
+.nutrition-chat { margin: 24px 0; padding: 20px; border: 1px solid #cbd7e6; border-radius: 12px; background: #f7faff; }
+.nutrition-chat-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.nutrition-chat-heading h2 { font-size: 1.2rem; margin: 0; }
+.nutrition-chat-heading > span { color: #285785; font-size: .8rem; padding: 4px 8px; background: #e2edf9; border-radius: 12px; }
+.nutrition-chat-note { font-size: .85rem; color: #46576a; margin: 12px 0; }
+.nutrition-chat-messages { max-height: 360px; overflow-y: auto; }
+.nutrition-chat-message { padding: 12px; margin: 8px 0; background: white; border-radius: 8px; overflow-wrap: anywhere; }
+.nutrition-chat-message.user { margin-left: 28px; background: #e6f0ff; }
+.nutrition-chat-message strong { font-size: .8rem; }
+.nutrition-chat-message p { margin: 4px 0 0; white-space: pre-wrap; }
+.nutrition-chat label { display: block; margin: 12px 0 6px; font-weight: 600; }
+.nutrition-chat textarea { width: 100%; padding: 10px; border: 1px solid #a8b8c8; border-radius: 6px; resize: vertical; }
+.nutrition-chat-actions { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+.nutrition-chat-evidence { margin-top: 16px; border-top: 1px solid #cbd7e6; padding-top: 12px; }
+.nutrition-chat-evidence details { background: white; border-radius: 6px; padding: 10px; margin: 8px 0; overflow-wrap: anywhere; }
+.nutrition-facts { margin: 16px 0; padding: 12px; border: 1px solid #cbd7e6; border-radius: 8px; background: #fff; }
+.nutrition-facts > summary { font-weight: 600; }
+.nutrition-fact-line { padding: 12px 0; border-top: 1px solid #e5eaf0; }
+.nutrition-fact-line select { width: 100%; padding: 8px; border: 1px solid #a8b8c8; border-radius: 6px; }
+.nutrition-fact-line input { width: 140px; padding: 8px; border: 1px solid #a8b8c8; border-radius: 6px; }
+.nutrition-chat-citations { border-top: 1px solid #e5eaf0; margin-top: 12px; padding-top: 8px; font-size: .85rem; }
+.nutrition-chat-citations > span { color: #46576a; font-weight: 600; }
+.nutrition-chat-citations details { padding: 6px 0; }

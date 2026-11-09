@@ -1,0 +1,93 @@
+import React from 'react';
+
+import { Status } from '../models';
+import { Error, Loader, NutriscoreBar } from '.';
+import { Card } from 'react-bootstrap';
+import { trackedAiFetch } from '../utils/aiActivity';
+
+interface RecipesProps {
+}
+
+interface Recipe {
+  name: string;
+  ingredients: Array<string>;
+  instructions: Array<string>;
+  nutriscore: string;
+}
+
+interface RecipesState {
+  recipes: Array<Recipe>;
+  status: Status;
+  errorMessage?: string;
+}
+
+export class Top3Recipes extends React.Component<RecipesProps, RecipesState> {
+  state: RecipesState = {
+    recipes: [] as Array<Recipe>,
+    status: Status.LOADING,
+  };
+
+  componentDidMount(): void {
+    let responseOk: boolean = true;
+    trackedAiFetch(`/api/cart-items/top-3-recipes`)
+      .then((response) => {
+        responseOk = response.ok;
+        return response.json()
+      })
+      .then((data) => {
+        if (!responseOk) {
+          this.setState({
+            recipes: [] as Array<Recipe>,
+            status: Status.ERROR,
+            errorMessage: data.message
+          });
+        } else {
+          this.setState({
+            recipes: data.recipes,
+            status: Status.LOADED
+          });
+        }
+      })
+      .catch((error) => this.setState({
+        recipes: [] as Array<Recipe>,
+        status: Status.ERROR,
+        errorMessage: error.message,
+      }));
+  }
+
+  getRecipeHtml(recipe: Recipe): JSX.Element {
+    return (
+      <Card key={recipe.name} className='mt-3'>
+        <Card.Body>
+          <Card.Title>{recipe.name}</Card.Title>
+          <NutriscoreBar nutriscore={recipe.nutriscore} />
+          <h5>Ingredients</h5>
+          <ul>{recipe.ingredients.map((ingredient, index) => <li key={`${recipe.name}-ingredient-${index}`}>{ingredient}</li>)}</ul>
+          <h5>Instructions</h5>
+          {recipe.instructions.map((instruction, index) => <Card.Text key={`${recipe.name}-instruction-${index}`}>{instruction}</Card.Text>)}
+        </Card.Body>
+      </Card>
+    );
+  }
+
+  getHtmlForRecipes(): Array<JSX.Element> {
+    if (this.state === undefined || this.state.recipes === undefined || this.state.recipes.length === 0) {
+      return [<Card.Text key='no-recipes'>No recipes found</Card.Text>];
+    }
+    return this.state.recipes.map((recipe) => this.getRecipeHtml(recipe));
+  }
+
+  render() {
+    const { status } = this.state;
+    return (
+      <Card className='mb-3'>
+        <Card.Body>
+          <Card.Title>Top 3 Recipes</Card.Title>
+          {status === Status.LOADING && <Loader />}
+          {status === Status.ERROR && <Error errorMessage={this.state.errorMessage} />}
+          {status === Status.LOADED && this.getHtmlForRecipes()}
+        </Card.Body>
+      </Card>
+    );
+  }
+}

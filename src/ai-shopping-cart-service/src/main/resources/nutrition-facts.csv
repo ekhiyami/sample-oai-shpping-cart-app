@@ -1,0 +1,5 @@
+product_id,product_name,preparation,basis_g,serving_g,energy_kcal,protein_g,total_fat_g,saturated_fat_g,carbohydrate_g,sugar_g,fiber_g,sodium_mg,record_version,updated_date,status,dataset
+DEMO-SALMON-001,Plain salmon fillet,raw,100,150,200,20,12,2.5,0,0,0,60,1.0,2026-10-28,approved-for-demo,synthetic-demo
+DEMO-SPINACH-001,Fresh spinach,raw,100,80,30,3,0.5,0.1,4,0.4,2,80,1.0,2026-10-28,approved-for-demo,synthetic-demo
+DEMO-CHICKPEAS-001,Regular canned chickpeas,drained,100,100,140,7,2,0.3,21,1,6,300,1.0,2026-10-28,approved-for-demo,synthetic-demo
+DEMO-CHICKPEAS-002,Reduced-sodium canned chickpeas,drained,100,100,140,7,2,0.3,21,1,6,80,1.0,2026-10-28,approved-for-demo,synthetic-demo

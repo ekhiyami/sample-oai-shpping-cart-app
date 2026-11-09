@@ -1,0 +1,12 @@
+.rag-trace { margin-top: 1rem; padding: 1rem; border: 1px solid #b9d5df; border-radius: .7rem; background: #f4fafc; color: #213743; }
+.rag-trace-heading { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem; margin-bottom: .6rem; }
+.rag-trace-heading span { font-size: .8rem; padding: .2rem .6rem; background: #dcecf2; border-radius: 1rem; }
+.rag-trace p { font-size: .9rem; margin-bottom: .7rem; }
+.rag-trace-summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .8rem; }
+.rag-trace-summary dt { font-size: .75rem; font-weight: 500; color: #536975; }
+.rag-trace-summary dd { margin: .2rem 0 0; font-weight: 700; }
+.rag-trace details { border-top: 1px solid #d1e1e7; padding-top: .7rem; font-size: .88rem; }
+.rag-trace summary { cursor: pointer; font-weight: 600; margin-bottom: .6rem; }
+.rag-trace li { margin-bottom: .5rem; }
+.rag-trace-id { color: #536975; overflow-wrap: anywhere; }
+@media (max-width: 650px) { .rag-trace-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
